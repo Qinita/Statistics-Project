@@ -56,7 +56,7 @@ project$recencydays <- as.numeric(toDate-project$datelp6)
 project$lpuryear <- as.numeric(project$lpuryear)
 project$datelp6_year <- as.numeric(project$datelp6_year)
 
-for (i in 1: 101532) {
+for (i in 1: n) {
 #If value equal to fall+spring, leave alone (new variable = 0)
   if (project$ordhist[i] == project$falord[i] + project$sprord[i]) {project$othord[i] = 0}
 #If value less than fall+spring, set equal to fall+spring (new variable = 0)
